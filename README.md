@@ -13,19 +13,19 @@ Criar um sistema que permite adicionar, buscar, listar e gerenciar o empréstimo
 ### Conceitos Aplicados
 
 - [x]  **Programação Orientada a Objetos:** Classes principais como `Livro`, `Revista`, `Membro`, `Biblioteca`.
-- [ ]  **Herança e Classes Abstratas:** Criar uma classe abstrata `ItemBiblioteca` com atributos comuns (título, autor, ano de publicação). `Livro` e `Revista` herdarão dela.
-- [ ]  **Interfaces:** Crie uma interface `Emprestavel` com os métodos `emprestar(Membro membro)` e `devolver()`. A classe `Livro` implementaria essa interface, mas talvez a `Revista` não (ou teria regras diferentes).
-- [ ]  **Polimorfismo:** A classe `Biblioteca` terá um `Array` (ou `ArrayList`) de `ItemBiblioteca`. Os métodos de busca e listagem deverão tratar `Livro` e `Revista` de forma polimórfica.
-- [ ]  **Imutabilidade:** Crie uma classe `Autor` com atributos como nome e data de nascimento. Garanta que um objeto `Autor` seja imutável após sua criação.
+- [x]  **Herança e Classes Abstratas:** Criar uma classe abstrata `ItemBiblioteca` com atributos comuns (título, autor, ano de publicação). `Livro` e `Revista` herdarão dela.
+- [x]  **Interfaces:** Crie uma interface `Emprestavel` com os métodos `emprestar(Membro membro)` e `devolver()`. A classe `Livro` implementaria essa interface, mas talvez a `Revista` não (ou teria regras diferentes).
+- [x]  **Polimorfismo:** A classe `Biblioteca` terá um `Array` (ou `ArrayList`) de `ItemBiblioteca`. Os métodos de busca e listagem deverão tratar `Livro` e `Revista` de forma polimórfica.
+- [x]  **Imutabilidade:** Crie uma classe `Autor` com atributos como nome e data de nascimento. Garanta que um objeto `Autor` seja imutável após sua criação.
 - [ ]  **Annotations:** Crie uma anotação customizada, por exemplo, `@GeneroLiterario`. Você pode usá-la na classe `Livro` para adicionar metadados sobre o gênero (Ficção, Técnico, etc.).
 - [ ]  **Controle de Fluxo e Loops:** Para criar o menu de interação com o usuário no console (ex: "1 - Adicionar Livro", "2 - Buscar por Título", etc.).
 
 ### Estrutura Sugerida
 
 - **Modele as classes:**
-    - [ ]  `Autor` (imutável).
-    - [ ]  `ItemBiblioteca` (abstrata).
-    - [ ]  `Livro` (herda de `ItemBiblioteca`, implementa `Emprestavel`).
+    - [x]  `Autor` (imutável).
+    - [x]  `ItemBiblioteca` (abstrata).
+    - [x]  `Livro` (herda de `ItemBiblioteca`, implementa `Emprestavel`).
     - [ ]  `Revista` (herda de `ItemBiblioteca`).
     - [ ]  `Membro`.
 - **Crie a classe `Biblioteca`:**

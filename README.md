@@ -17,8 +17,7 @@ Criar um sistema que permite adicionar, buscar, listar e gerenciar o empréstimo
 - [x]  **Interfaces:** Crie uma interface `Emprestavel` com os métodos `emprestar(Membro membro)` e `devolver()`. A classe `Livro` implementaria essa interface, mas talvez a `Revista` não (ou teria regras diferentes).
 - [x]  **Polimorfismo:** A classe `Biblioteca` terá um `Array` (ou `ArrayList`) de `ItemBiblioteca`. Os métodos de busca e listagem deverão tratar `Livro` e `Revista` de forma polimórfica.
 - [x]  **Imutabilidade:** Crie uma classe `Autor` com atributos como nome e data de nascimento. Garanta que um objeto `Autor` seja imutável após sua criação.
-- [ ]  **Annotations:** Crie uma anotação customizada, por exemplo, `@GeneroLiterario`. Você pode usá-la na classe `Livro` para adicionar metadados sobre o gênero (Ficção, Técnico, etc.).
-- [ ]  **Controle de Fluxo e Loops:** Para criar o menu de interação com o usuário no console (ex: "1 - Adicionar Livro", "2 - Buscar por Título", etc.).
+- [x]  **Controle de Fluxo e Loops:** Para criar o menu de interação com o usuário no console (ex: "1 - Adicionar Livro", "2 - Buscar por Título", etc.).
 
 ### Estrutura Sugerida
 
@@ -26,17 +25,16 @@ Criar um sistema que permite adicionar, buscar, listar e gerenciar o empréstimo
     - [x]  `Autor` (imutável).
     - [x]  `ItemBiblioteca` (abstrata).
     - [x]  `Livro` (herda de `ItemBiblioteca`, implementa `Emprestavel`).
-    - [ ]  `Revista` (herda de `ItemBiblioteca`).
-    - [ ]  `Membro`.
+    - [x]  `Revista` (herda de `ItemBiblioteca`).
+    - [x]  `Membro`.
 - **Crie a classe `Biblioteca`:**
-    - [ ]  Deve conter um `ArrayList<ItemBiblioteca>` para o acervo.
-    - [ ]  Deve ter métodos para `adicionarItem`, `buscarPorTitulo`, `listarTodosOsItens`.
+    - [x]  Deve conter um `ArrayList<ItemBiblioteca>` para o acervo.
+    - [x]  Deve ter métodos para `adicionarItem`, `buscarPorTitulo`, `listarTodosOsItens`.
 - **Implemente a lógica de empréstimo:**
-    - [ ]  Controle se um item está disponível ou emprestado.
-    - [ ]  Associe o empréstimo a um `Membro`.
+    - [x]  Controle se um item está disponível ou emprestado.
+    - [x]  Associe o empréstimo a um `Membro`.
 - **Crie a classe `Main`:**
-    - [ ]  Implemente um menu de texto para que o usuário possa interagir com o sistema.
+    - [x]  Implemente um menu de texto para que o usuário possa interagir com o sistema.
 
 ### Desafio Extra
-
-Faça com que a anotação `@GeneroLiterario` possa ser lida em tempo de execução (usando Reflection) para, por exemplo, permitir uma busca de livros por gênero.
+    - [ ] Implementar o sistema de empréstimo e devolução associada à um membro.

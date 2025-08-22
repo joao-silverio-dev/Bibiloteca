@@ -36,5 +36,5 @@ Criar um sistema que permite adicionar, buscar, listar e gerenciar o empréstimo
 - **Crie a classe `Main`:**
     - [x]  Implemente um menu de texto para que o usuário possa interagir com o sistema.
 
-### Desafio Extra
-    - [ ] Implementar o sistema de empréstimo e devolução associada à um membro.
+- **Implementações extras**
+    - [ ] Implementar o sistema de empréstimo e devolução associada à um membro. - Em andamento
